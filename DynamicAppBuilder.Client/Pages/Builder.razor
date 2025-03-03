@@ -1,0 +1,258 @@
+﻿@page "/builder"
+
+@inject IJSRuntime JSRuntime
+@inject PropsService DesignService
+@inject BuildWares buildWares;
+@inject Globals globals;
+@inject Handles HandleService
+@inject ControlMediator controlMeditore;
+
+@using System.Reflection;
+@using DynamicAppBuilder.Client.Models;
+
+@if (@globals.InEdit)
+{
+    <div class="controls">
+        <h4>Add:</h4>
+        <button class="draggable" draggable="true" @ondragstart="HandleService.OnDragStartTI">Text Input</button>
+        <button class="draggable" draggable="true" @ondragstart="HandleService.OnDragStartNI">Number Input</button>
+        <button class="draggable" draggable="true" @ondragstart="HandleService.OnDragStartB">Button</button>
+        <button class="draggable" draggable="true" @ondragstart="HandleService.OnDragStartD">Dropdown</button>
+        <button class="draggable" draggable="true" @ondragstart="HandleService.OnDragStartCB">Check Box</button>
+        <button class="draggable" draggable="true" @ondragstart="HandleService.OnDragStartDT">DateTime Picker</button>
+    </div>
+}
+
+<div class="container" >
+    <div class="canvas" @ondrop="HandleService.OnDrop" @ondragover="HandleService.OnDragOver" disabled="@globals.InEdit">
+        @for (int i = 0; i < globals.Controls.Count(); i++)
+        {
+            <div class="controlDiv">
+                @globals.Controls[i]
+            </div>
+        }
+    </div>
+
+    <div class="sideDive">
+        @if (globals.InEdit)
+        {
+            <div class="propertieForm">
+                <h4>Update Properties</h4>
+                @if (globals.SelectedControl != null)
+                {
+                    String curType = "";
+                    @foreach (var property in globals.SelectedControl.GetType().GetProperties())
+                    {
+                        @if (property != null && property.Name != "coordinates")
+                        {
+                            @if (@property.Name == "Type")
+                            {
+                                curType = @property.GetValue(globals.SelectedControl).ToString();
+                                <div class="propetyField">
+                                    <label>@property.Name: @property.GetValue(globals.SelectedControl)</label>
+                                </div>
+                            }
+                            else
+                            {
+                                @if (@property.GetValue(globals.SelectedControl) != null)
+                                {
+                                    @if (@property.Name == "Options")
+                                    {
+                                        <div class="propetyField">
+                                            <label>@property.Name: </label>
+                                            <div class="showOptions">
+                                                @foreach (string option in globals.SelectedControl.Options)
+                                                {
+                                                    <h8>@option</h8>
+                                                }
+                                            </div>
+                                        </div>
+                                    }
+                                    else if (@property.Name == "defaultValue")
+                                    {
+                                        <div class="propetyField">
+                                            <label>@property.Name: </label>
+                                            @switch (curType)
+                                            {
+                                                case "NumberInput":
+                                                    <input class="inputEditField" type="number" value="@property.GetValue(globals.SelectedControl)?.ToString()" @onchange="(e) => HandleService.HandleChange(e, property.Name, curType)" disabled="@(!globals.InEdit)" />
+                                                    break;
+                                                case "DropDown":
+                                                    @if (!globals.isAddingOption)
+                                                    {
+                                                        <button class="inputEditField" @onclick="HandleService.AddOptionInput" disabled="@(!globals.InEdit)">Add Option</button>
+                                                    }
+                                                    else
+                                                    {
+                                                        <div>
+                                                            @if (globals.isAddingOption)
+                                                            {
+                                                                <input @bind="globals.NewOption" type="text" class="inputEditField" placeholder="Enter option..." />
+                                                                <button @onclick="HandleService.SaveOption">✔️</button>
+                                                                <button @onclick="HandleService.CancelAdding">❌</button>
+                                                            }
+                                                        </div>
+                                                    }
+                                                    break;
+                                                case "CheckBox":
+                                                    if (@property.GetValue(globals.SelectedControl).ToString().ToLower() == "true")
+                                                    {
+                                                        <input class="inputEditField" type="checkbox" checked @onchange="(e) => HandleService.HandleChange(e, property.Name, curType) " disabled="@(!globals.InEdit)" />
+                                                    }
+                                                    else
+                                                    {
+                                                        <input class="inputEditField" type="checkbox"  @onchange="(e) => HandleService.HandleChange(e, property.Name, curType)" disabled="@(!globals.InEdit)" />
+                                                    }
+                                                    break;
+                                                case "DatePicker":
+                                                    <input class="inputEditField" type="date" value="@DateTime.Parse(property.GetValue(globals.SelectedControl).ToString()).ToString("yyyy-MM-dd")" @onchange="(e) => HandleService.HandleChange(e, property.Name, curType)" disabled="@(!globals.InEdit)" />
+                                                    break;
+                                                default:
+                                                    <input class="inputEditField" type="text" value="@property.GetValue(globals.SelectedControl).ToString()" @onchange="(e) => HandleService.HandleChange(e, property.Name, curType)" disabled="@(!globals.InEdit)" />
+                                                    break;
+                                            }
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="propetyField">
+                                            <label>@property.Name: </label>
+                                            <input class="inputEditField" type="text" value="@property.GetValue(globals.SelectedControl)" @onchange="(e) => HandleService.HandleChange(e, property.Name, curType)" disabled="@(!globals.InEdit)" />
+                                        </div>
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    <button @onclick="removeCurItem">remove</button>
+                }
+            </div>
+            <div class="getHistoryDiv">
+                <div class="selectContainer">
+                    <select id="propsSelect" @bind="globals.SelectedProp">
+                        <option value="" disabled selected>history</option>
+                        @if (globals.HistoryNames.Count() > 0)
+                        {
+                            @foreach (var name in globals.HistoryNames)
+                            {
+                                <option value="@name.name">@name.name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <button @onclick="SendSelectedProp">Fetch App</button>
+            </div>
+        }
+    </div>
+
+</div>
+
+
+<div class="clearDiv">
+    <button @onclick="HandleService.runState">run</button>
+    <button @onclick="HandleService.editState">edit</button>
+    <button class="@GetButtonClass()" @onclick="HandleService.ClearCanvas" disabled="@(!globals.InEdit)">clear canvas</button>
+    <button class="@GetButtonClass()" disabled="@(!globals.InEdit)" @onclick="SaveProps">save</button>
+    <button class="@GetButtonClass()" disabled="@(!globals.InEdit)" @onclick="newApp">new application</button>
+    <a>Application name:</a>
+    <input type="text" disabled="@(!globals.InEdit)" @bind="globals.AppName" />
+</div>
+
+
+
+
+@code {
+    protected override void OnInitialized()
+    {
+        controlMeditore.RegisterStateChanged(StateHasChanged);
+    }
+
+    private async Task SaveProps()
+    {
+        if (globals.AppName == null || globals.AppName.Length == 0 || !globals.AppName.Any(c => !char.IsWhiteSpace(c)))
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "An application name is required.");
+            return;
+        }
+
+        if (isPropsEmpty())
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "Design cannot be saved because it is empty.");
+            return;
+        }
+
+        if (globals.AppName.Any(c => !char.IsWhiteSpace(c)))
+            globals.AppName = new string(globals.AppName.Where(c => !char.IsWhiteSpace(c)).ToArray());
+
+        if (DesignService.isNameinHistory())
+        {
+            bool result = await JSRuntime.InvokeAsync<bool>("showConfirmation", "The name already exists. Proceeding will overwrite the existing data. Do you want to continue?");
+            if (!result)
+                return;
+        }
+
+        Props propData = new Props();
+        propData.name = globals.AppName;
+        propData.controlsProperties = globals.Props;
+        await DesignService.SavePropsAsync(propData);
+
+    }
+
+    public bool isPropsEmpty()
+    {
+        if(globals.Props == null || globals.Props.Count == 0)
+            return true;
+
+        for (int i = 0; i < globals.Props.Count; i++)
+            if (globals.Props[i] != null)
+                return false;
+
+        return true;
+    }
+
+    public void newApp()
+    {
+        globals.AppName = null;
+        globals.Props = new List<ControlProperties>();
+        globals.SelectedControl = null;
+        HandleService.editState();
+    }
+
+    public void setAppName(ChangeEventArgs e)
+    {
+        globals.AppName = e.Value?.ToString();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await DesignService.GetPropsAsync();
+    }
+
+    public async Task SendSelectedProp()
+    {
+        if (!string.IsNullOrEmpty(globals.SelectedProp))
+        {
+            await DesignService.GetPropsByNameAsync(globals.SelectedProp);
+        }
+        else
+        {
+            Console.WriteLine("no name was choosen");
+        }
+    }
+
+    private string GetButtonClass()
+    {
+        return !globals.InEdit ? "disabled" : "";
+    }
+
+    public void removeCurItem()
+    {
+        for (int i = 0; i < globals.Props.Count; i++)
+            if (globals.Props[i] == globals.SelectedControl)
+            {
+                globals.Props[i] = null;
+                globals.Controls[i] = null;
+                globals.SelectedControl = null;
+            }
+    }
+}

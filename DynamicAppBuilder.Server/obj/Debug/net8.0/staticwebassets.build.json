@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Xqr4ifjZtXALjIkLnr/1YAVS5QT4kwF+C8L/NBegmQg=",
+  "Source": "DynamicAppBuilder.Server",
+  "BasePath": "_content/DynamicAppBuilder.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

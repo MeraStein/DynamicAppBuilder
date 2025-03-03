@@ -1,0 +1,6 @@
+@DynamicAppBuilder.Server_HostAddress = https://localhost:7770
+
+GET {{DynamicAppBuilder.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

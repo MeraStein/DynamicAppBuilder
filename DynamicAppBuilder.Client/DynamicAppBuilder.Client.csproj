@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DragDropEvents\**" />
+    <Content Remove="DragDropEvents\**" />
+    <EmbeddedResource Remove="DragDropEvents\**" />
+    <None Remove="DragDropEvents\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Models\Coordinates.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.13" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

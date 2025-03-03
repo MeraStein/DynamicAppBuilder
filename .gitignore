@@ -1,0 +1,24 @@
+# User-specific files
+.vs/
+.vscode/
+.idea/
+
+# User-specific files for Windows
+.DS_Store
+Thumbs.db
+
+# Build results
+bin/
+obj/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer log files
+*.log
+
+# Windows Installer temporary files
+*.tmp
