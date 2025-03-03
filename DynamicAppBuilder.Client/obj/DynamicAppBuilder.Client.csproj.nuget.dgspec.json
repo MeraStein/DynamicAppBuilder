@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\DynamicAppBuilder.Client.csproj": {}
+    "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\DynamicAppBuilder.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\DynamicAppBuilder.Client.csproj": {
+    "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\DynamicAppBuilder.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\DynamicAppBuilder.Client.csproj",
+        "projectUniqueName": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\DynamicAppBuilder.Client.csproj",
         "projectName": "DynamicAppBuilder.Client",
-        "projectPath": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\DynamicAppBuilder.Client.csproj",
+        "projectPath": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\DynamicAppBuilder.Client.csproj",
         "packagesPath": "C:\\Users\\meroo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\obj\\",
+        "outputPath": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

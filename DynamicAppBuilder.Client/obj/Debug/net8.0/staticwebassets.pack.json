@@ -1,59 +1,59 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DynamicAppBuilder.Client.styles.css",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DynamicAppBuilder.Client.styles.css",
       "PackagePath": "staticwebassets\\DynamicAppBuilder.Client.styles.css"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\demo.css",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\demo.css",
       "PackagePath": "staticwebassets\\css\\demo.css"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\home.css",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\layot.css",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\layot.css",
       "PackagePath": "staticwebassets\\css\\layot.css"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\index.html",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\javaScript\\dragDrop.js",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\javaScript\\dragDrop.js",
       "PackagePath": "staticwebassets\\javaScript\\dragDrop.js"
     },
     {
-      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\meroo\\OneDrive\\שולחן העבודה\\עבודה\\פרוייקטים\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {

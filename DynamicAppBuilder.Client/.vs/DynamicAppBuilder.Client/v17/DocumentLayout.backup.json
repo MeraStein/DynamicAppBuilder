@@ -1,12 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\meroo\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\DynamicAppBuilder\\DynamicAppBuilder.Client\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\meroo\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E930FA-B24F-8EA9-5100-52FFB05D1AD0}|DynamicAppBuilder.Client.csproj|c:\\users\\meroo\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\git\\dynamicappbuilder\\dynamicappbuilder.client\\pages\\builder.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E930FA-B24F-8EA9-5100-52FFB05D1AD0}|DynamicAppBuilder.Client.csproj|solutionrelative:pages\\builder.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3E930FA-B24F-8EA9-5100-52FFB05D1AD0}|DynamicAppBuilder.Client.csproj|c:\\users\\meroo\\onedrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\git\\dynamicappbuilder\\dynamicappbuilder.client\\pages\\demo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3E930FA-B24F-8EA9-5100-52FFB05D1AD0}|DynamicAppBuilder.Client.csproj|solutionrelative:pages\\demo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Builder.razor",
+              "DocumentMoniker": "C:\\Users\\meroo\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\Pages\\Builder.razor",
+              "RelativeDocumentMoniker": "Pages\\Builder.razor",
+              "ToolTip": "C:\\Users\\meroo\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\Pages\\Builder.razor",
+              "RelativeToolTip": "Pages\\Builder.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T07:47:27.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Demo.razor",
+              "DocumentMoniker": "C:\\Users\\meroo\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\Pages\\Demo.razor",
+              "RelativeDocumentMoniker": "Pages\\Demo.razor",
+              "ToolTip": "C:\\Users\\meroo\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E2\u05D1\u05D5\u05D3\u05D4\\\u05E4\u05E8\u05D5\u05D9\u05D9\u05E7\u05D8\u05D9\u05DD\\git\\DynamicAppBuilder\\DynamicAppBuilder.Client\\Pages\\Demo.razor",
+              "RelativeToolTip": "Pages\\Demo.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAADB0wBIAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T07:33:18.005Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
