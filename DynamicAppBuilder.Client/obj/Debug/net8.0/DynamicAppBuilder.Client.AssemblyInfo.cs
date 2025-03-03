@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DynamicAppBuilder.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+459dee6c0d3ea00f5b4dba21fb7618da4d381fdf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+133842668d1f7500911c613f7ac7cbbdfb9209e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("DynamicAppBuilder.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DynamicAppBuilder.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

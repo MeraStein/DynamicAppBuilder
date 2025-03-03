@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "DynamicAppBuilder.Client",
   "resources": {
-    "hash": "sha256-Vk3+uu7CrUOafP0HdrzBQVXY/6Y/rewpAHcGZyb1zXg=",
+    "hash": "sha256-8kVyBVxLEf1qtS+V0ZAZgUrKpkT519DuNldGMW5z2Sw=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
     },
@@ -209,10 +209,10 @@
       "mscorlib.wasm": "sha256-RAf5jgXLg+06C4tJ3CabxAZaVjCN2/+E6fxRjRN8yHk=",
       "netstandard.wasm": "sha256-KCAE8RQwTurP5pGnGF819qf9sK++2O0rXzt6tOjlfi8=",
       "System.Private.CoreLib.wasm": "sha256-LQqLbHgeEX4HONx7GwIxGgmzIXP6n2OPxqnq+/4Tyqk=",
-      "DynamicAppBuilder.Client.wasm": "sha256-X2QTgrW/x6tPelZu7tsR23r8lesJgf7FKsCTPeD4suc="
+      "DynamicAppBuilder.Client.wasm": "sha256-EqR204yMTS3IZ6Ax7RGKN2R236xT1dEp414Zp+R2RM4="
     },
     "pdb": {
-      "DynamicAppBuilder.Client.pdb": "sha256-Eowk0wsxbKYdMDeOUStVZheDjQ+2q9+OV9jVYZvVqTQ="
+      "DynamicAppBuilder.Client.pdb": "sha256-RwyYPTqsLepCxcFXt+arTjG324552hi/WhkPeip7aZM="
     }
   },
   "cacheBootResources": true,
